@@ -59,6 +59,7 @@ class ScholarInfo():
         map_dict = {
             "International Conference on Machine Learning".lower(): "ICML",
             "Proceedings of the IEEE conference on computer vision and".lower(): "CVPR",
+            "IEEE/CVF Conference on Computer Vision".lower(): "CVPR",
             # ICCV
             "Proceedings of the IEEE/CVF International Conference on".lower(): "ICCV",
             # ECCV
