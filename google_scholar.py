@@ -60,16 +60,24 @@ class ScholarInfo():
             "International Conference on Machine Learning".lower(): "ICML",
             "Proceedings of the IEEE conference on computer vision and".lower(): "CVPR",
             # ICCV
-            "Proceedings of the IEEE International Conference on Computer Vision".lower(): "ICCV",
+            "Proceedings of the IEEE/CVF International Conference on".lower(): "ICCV",
             # ECCV
             "European Conference on Computer Vision".lower(): "ECCV",
             # NeurIPS
-            "The Conference on Neural Information Processing Systems".lower(): "NeurIPS",
+            "Neural Information Processing Systems".lower(): "NeurIPS",
             # ICLR
             "International Conference on Learning Representations".lower(): "ICLR",
             # IJCAI
             "International Joint Conference on Artificial Intelligence".lower(): "IJCAI",
             "arxiv".lower(): "arXiv",
+            # AAAI
+            "Proceedings of the AAAI Conference on Artificial Intelligence".lower(): "AAAI",
+            # ACL
+            "Proceedings of the Association for Computational Linguistics".lower(): "ACL",
+            # EMNLP
+            "Proceedings of the Conference on Empirical Methods in Natural".lower(): "EMNLP",
+            # CoRL
+            "Conference on Robot Learning".lower(): "CoRL",
         }
         for k, v in map_dict.items():
             if k in pub:
@@ -80,8 +88,8 @@ class ScholarInfo():
 
 if __name__ == '__main__':
     proxy = {
-        'http': '127.0.0.1:1087',
-        'https': '127.0.0.1:1087',
+        'http': '127.0.0.1:7890',
+        'https': '127.0.0.1:7890',
     }
     gscholar = ScholarInfo(proxy=proxy)
     arxiv_id = "2106.06103"
